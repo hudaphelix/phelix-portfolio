@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navbar Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="navbar-section">
+  <nav>
+    <div class="logo">
+      <img src="your-logo.png" alt="Logo" />
+    </div>
+
+    <div class="nav-center">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="contact-btn">Contact Us</a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</section>
+
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+
+
+
+<section class="services-section">
+  <h2 class="services-title">Our Services</h2>
+  <div class="services-container">
+
+    <div class="service-card">
+      <div class="service-icon">🎨</div>
+      <h3 class="service-heading">Graphic Design Intern</h3>
+      <p class="service-description">Create visuals, banners, and marketing designs.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">💻</div>
+      <h3 class="service-heading">Web Development Intern</h3>
+      <p class="service-description">Develop and maintain websites using HTML, CSS, JS.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📱</div>
+      <h3 class="service-heading">App Development Intern</h3>
+      <p class="service-description">Build mobile applications for Android/iOS platforms.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🧠</div>
+      <h3 class="service-heading">UI/UX Design Intern</h3>
+      <p class="service-description">Design intuitive user interfaces and experiences.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📢</div>
+      <h3 class="service-heading">Social Media Intern</h3>
+      <p class="service-description">Plan campaigns and grow digital presence.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🎬</div>
+      <h3 class="service-heading">Video Editing Intern</h3>
+      <p class="service-description">Edit reels, trailers, and marketing videos.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🖼️</div>
+      <h3 class="service-heading">Photo Editing Intern</h3>
+      <p class="service-description">Retouch and enhance images professionally.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+</body>
+</html>
