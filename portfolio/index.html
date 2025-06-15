@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- navbar -->
+  <section class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+  <img src="images/logo.jpeg" alt="Your Logo" style="height: 50px;">
+</div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </div>
+
+      <button class="contact-btn" id="contactBtn">Contact Us</button>
+    </div>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      const contactBtn = document.getElementById('contactBtn');
+      navLinks.classList.toggle('active');
+      contactBtn.classList.toggle('active');
+    }
+  </script>
+
+
+
+
+<!-- section2 -->
+
+<section class="phelix-services">
+
+<div class="left-side">
+  <div class="logo-text">
+    <span class="highlight">PHELIX</span>
+    <span class="subtext">Services</span>
+  </div>
+</div>
+
+  <div class="right-side">
+    <div class="box web"><span class="yellow">|</span><span>Web Development</span></div>
+    <div class="box digital"><span class="yellow">|</span><span>DIGITAL MARKETING</span></div>
+    <div class="box ui"><span class="yellow">|</span><span>UI/UX</span></div>
+    <div class="box social"><span class="yellow">|</span><span>SOCIAL MEDIA</span></div>
+    <div class="box video"><span class="yellow">|</span><span>APP DEVELOPMENT</span></div>
+    <div class="box graphic"><span class="yellow">|</span><span>VIDEO EDITS</span></div>
+    <div class="box app"><span class="yellow">|</span><span>GRAPHICS</span></div>
+  </div>
+</section>
+
+
+</body>
+</html>
